@@ -3,7 +3,9 @@ const Router = require("express");
 const routes = Router();
 
 
-routes.use("/users", (request,response)=>{});
+routes.get("/users", (request,response)=>{
+    response.json({ message: "user route" });
+});
 
 
 
